@@ -67,7 +67,7 @@ int userInput(string message){
 }
 
 int main(void){
-
+    //クラスの宣言
 	T cla;
     //質問文とinputの表示
 	for(int i=0;i<cla.message.size();i++){
