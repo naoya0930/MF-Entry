@@ -22,7 +22,7 @@ const string outMessage = "指定した時刻の範囲内には入っていま�
 const string str[] = {"start", "end", "judge"};
 
 //質問文と回答を入れるクラス
-class T
+class Question
 {
 public:
     //質問文
@@ -33,7 +33,7 @@ public:
         {str[1], -1},
         {str[2], -1}};
     //コンストラクタ、質問文の入力
-    T()
+    Question()
     {
         message.push_back(startTMessage);
         message.push_back(endTMessage);
@@ -78,7 +78,7 @@ int userInput(string message)
 int main(void)
 {
     //クラスの宣言
-    T cla;
+    Question cla;
     //質問文とinputの表示
     for (int i = 0; i < cla.message.size(); i++)
     {
